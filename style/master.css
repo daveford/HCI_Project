@@ -1,3 +1,38 @@
-.logo { display:block; float:left; }
+header, footer {
+    position:relative; 
+    display:block; 
+    width:100%; 
+    background-color:cornflowerblue;
+}
+header { 
+    margin-top:3%; 
+}
+
+footer {
+    height:50px;
+}
+
+.logo { 
+    display:block; 
+    position:absolute; 
+    max-width:215px; 
+    width:28%; 
+    max-height:210px; 
+    margin:2%; 
+}
+
+.logo  > a { 
+    display:absolute; 
+    display:block; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    z-index:10; 
+}
+
 .global-nav { width:70%; }
+.nav > li { 
+    color:#ffffff;
+}
 .nav > li:after { content:' | '; }
