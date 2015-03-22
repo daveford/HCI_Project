@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Movie Tix | Purchase</title>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../style/master.css"/>
+        <link rel="stylesheet" href="../style/purchase.css"/>
+    </head>
+    <body>
+        <!-- global nav -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img class="logo" src="../img/logo.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Current Movies</a></li>
+                <li><a href="#">Upcoming Movies</a></li>
+                <li><a href="#">Recommended Movies</a></li>
+                <li><a href="#">Create Account</a></li>
+                <li><a href="#">Sign In</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <!-- main body -->
+        <!--<div class="container-fluid">
+            <div class="row">-->
+                <div class="main-content col-xs-12 col-md-8">
+                    <div class="form container-fluid form-horizontal container">
+                        <div class="form-group">
+                            <label class="col-xs-12 col-md-2 control-label text-left">Card Number</label>
+                            <div class="col-xs-12 col-md-4"><input type="text" class="form-control" placeholder="Card Number" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-12 col-md-2 control-label text-left">Name On Card</label>
+                            <div class="col-xs-12 col-md-4"><input type="text" class="form-control" placeholder="Name on Card" /></div>
+                        </div> 
+                        <div class="form-group">
+                            <label class="col-xs-12 col-md-2 control-label text-left">Select Card Type</label>
+                            <div class="col-xs-12 col-md-4">
+                                <select id="cardType" class="form-control">
+                                    <option value="Visa">Visa</option>
+                                    <option value="Mastercard">Mastercard</option>
+                                    <option value="Discover">Discover</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-12 col-md-2 control-label text-left">Expirtation Date</label>
+                            <div class="col-xs-12 col-md-2">
+                                <select id="expDateMonth" class="form-control">
+                                    <option value="1">Jan</option>
+                                    <option value="2">Feb</option>
+                                    <option value="3">Mar</option>
+                                    <option value="4">Apr</option>
+                                    <option value="5">May</option>
+                                    <option value="6">Jun</option>
+                                    <option value="7">Jul</option>
+                                    <option value="8">Aug</option>
+                                    <option value="9">Sept</option>
+                                    <option value="10">Oct</option>
+                                    <option value="11">Nov</option>
+                                    <option value="12">Dec</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-12 col-md-2">
+                                <select id="expDateYear" class="form-control">
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                </select>
+                            </div>
+                        </div> 
+                        <div class="form-group">
+                            <label class="col-xs-12 col-md-2 control-label text-left">CVV</label>
+                            <div class="col-xs-12 col-md-2"><input type="text" class="form-control" placeholder="CVV" maxlength="4" /></div>
+                        </div> 
+                        <div class="form-group">
+                            <label class="col-xs-12 col-md-2 control-label text-left">Confirm Amount</label>
+                            <div class="col-xs-12 col-md-4"><input type="text" class="form-control" placeholder="Location" /></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="formBtn col-xs-12 col-md-2">
+                                <input type="button" class="btn btn-lg btn-block" value="Pay" id="submitBtn"/>
+                            </div>
+                            <div class="formBtn col-xs-12 col-md-2">
+                                <input type="reset"  class="btn btn-lg btn-block" value="Reset" id="resetBtn" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-bar col-md-3 col-md-offset-1 hidden-xs hidden-sm">
+                    <div id="ticketInfo" class="col-md-8">
+                        <h4>Ticket Information</h4>
+                        <p>Movie: The Theory of Everything</p>
+                        <p>Location: West Haven, CT</p>
+                        <p>Date: 3/30/2015</p>
+                        <p>Time: 9:10pm</p>
+                        <p>Number of Tickets: 5</p>
+                        <p>Type of Movie: Drama</p>
+                    </div>
+
+                    <div id="recomentations" class="col-md-8">
+                        <h4>Recommended For You</h4>
+                        <p><a href="#">Birdman</a></p>
+                        <p><a href="#">Focus</a></p>
+                        <p><a href="#">Kingsman</a></p>
+                    </div>
+                </div>
+           <!-- </div>
+        </div>-->
+        <!-- footer -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

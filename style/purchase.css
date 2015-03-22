@@ -1,0 +1,6 @@
+.side-bar > div { display:block; position:relative; margin:4% 0; }
+@media (min-width:940px){
+    /*.main-content { float:left; }
+    .side-bar { float:right; }*/
+    
+}

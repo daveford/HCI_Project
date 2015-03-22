@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Movie Tix | Buy</title>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../style/master.css"/>
+    </head>
+    <body>
+        <!-- global nav -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img class="logo" src="../img/logo.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Current Movies</a></li>
+                <li><a href="#">Upcoming Movies</a></li>
+                <li><a href="#">Recommended Movies</a></li>
+                <li><a href="#">Create Account</a></li>
+                <li><a href="#">Sign In</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <!-- main body -->
+        <div class="form container-fluid form-horizontal container">
+            <div class="form-group">
+                <label class="col-xs-12 col-md-2 control-label text-left">Movie</label>
+                <div class="col-xs-12 col-md-4"><input type="text" class="form-control" placeholder="Movie" /></div>
+                
+                <label class="col-xs-12 col-md-2 control-label text-left">Location</label>
+                <div class="col-xs-12 col-md-4"><input type="text" class="form-control" placeholder="Location" /></div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-xs-12 col-md-2 control-label text-left">Date</label>
+                <div class="col-xs-12 col-md-4" data-date-format="dd-mm-yyyy">
+                    <input type="date" class="form-control" placeholder="Movie" />
+                    <span class="add-on"><i class="icon-calendar"></i></span>
+                </div>
+                
+                <label class="col-xs-12 col-md-2 control-label text-left">Time</label>
+                <div class="col-xs-12 col-md-4">
+                    <select id="timeSelect" class="form-control">
+                        <option value="6:30">6:30</option>
+                        <option value="6:30">7:00</option>
+                        <option value="6:30">7:30</option>
+                        <option value="6:30">8:00</option>
+                        <option value="6:30">8:30</option>
+                        <option value="6:30">9:00</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="col-xs-12 col-md-2 control-label text-left">Number of Tickets</label>
+                <div class="col-xs-12 col-md-4">
+                    <select id="numTixSelect" class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                
+                <label class="col-xs-12 col-md-2 control-label text-left">Type of Movie</label>
+                <div class="col-xs-12 col-md-4">
+                    <select id="movieTypeSelect" class="form-control">
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Documenary">Documenary</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Romance">Romance</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="formBtn col-xs-12 col-md-2">
+                    <input type="button" class="btn btn-lg btn-block" value="Buy" id="submitBtn"/>
+                </div>
+                <div class="formBtn col-xs-12 col-md-2">
+                    <input type="reset"  class="btn btn-lg btn-block" value="Reset" id="resetBtn" />
+                </div>
+            </div>
+            
+        </div>
+        <!-- footer -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
