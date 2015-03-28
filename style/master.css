@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 header, footer {
     position:relative; 
     display:block; 
@@ -12,27 +13,27 @@ footer {
     height:50px;
 }
 
-.logo { 
-    display:block; 
-    position:absolute; 
-    max-width:215px; 
-    width:28%; 
-    max-height:210px; 
-    margin:2%; 
+body > * {
+  font-family: 'Oswald', sans-serif; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.logo {
+  width: 140px;
+  position: relative;
+  bottom: 122%;
+  z-index: 4; 
 }
 
-.logo  > a { 
-    display:absolute; 
-    display:block; 
-    top:0; 
-    left:0; 
-    width:100%; 
-    height:100%; 
-    z-index:10; 
-}
+.form { margin-top:5%; }
 
-.global-nav { width:70%; }
-.nav > li { 
-    color:#ffffff;
+.form-group { margin:3% 0; }
+
+/*.formBtn { position:relative; display:block; margin:1% 0; }
+    .formBtn input { width:100%; }*/
+
+@media (min-width: 768px){
+    .form-horizontal .control-label { text-align:left; }
 }
-.nav > li:after { content:' | '; }
